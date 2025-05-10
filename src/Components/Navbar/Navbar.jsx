@@ -24,6 +24,7 @@ const Navbar = () => {
         <div className="nav-logo">AKILAN</div>
         <ul className="nav-links">
           <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#resume">RESUME</a></li>
           <li><a href="#projects">PROJECTS</a></li>
