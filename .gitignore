@@ -26,6 +26,7 @@ dist-ssr
 
 # Dependencies
 /node_modules
+/foruse
 /.pnp
 .pnp.js
 
