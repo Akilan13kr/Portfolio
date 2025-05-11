@@ -9,20 +9,20 @@ const Projects = () => {
     {
       id: 1,
       title: "Endangered Heritage Platform",
-      description: "A web portal to preserve and share indigenous culture using AI and community contributions.",
+      description: "A platform to document and preserve cultural heritage sites using 3D scanning technology",
       category: "WEBSITES",
       image: "heritage.jpg",
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/heritage-platform",
         website: "https://yourheritageplatform.com",
-        youtube: "https://youtube.com"
+        youtube: ""
       }
     },
     {
       id: 2,
       title: "Gas Leak Detection IoT System",
-      description: "A smart IoT device that detects gas leaks and triggers safety actions automatically.",
+      description: "Real-time gas leak detection with SMS alerts and cloud monitoring",
       category: "IOT",
       image: "gasleak.jpg",
       inProgress: true,
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Disaster Management Dam Controller",
-      description: "An automated dam control system using sensors and servo motors for flood prevention.",
+      description: "Automated water level control system for flood prevention",
       category: "IOT",
       image: "damcontroller.jpg",
       inProgress: false,
@@ -48,7 +48,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Android Attendance System",
-      description: "A mobile app using Firebase to record, track, and manage student attendance easily.",
+      description: "Facial recognition attendance system with geofencing",
       category: "APPS",
       image: "attendance.jpg",
       inProgress: false,
@@ -60,8 +60,8 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Weather Prediction",
-      description: "A responsive portfolio with 3D animations and dark mode",
+      title: "AI Chatbot for Heritage Support",
+      description: "NLP chatbot providing information about cultural heritage sites",
       category: "AI",
       image: "chatbot.jpg",
       inProgress: false,
@@ -74,7 +74,7 @@ const Projects = () => {
     {
       id: 6,
       title: "Recommendation Chatbot",
-      description: "An AI-powered bot recommending plantation areas to support eco-initiatives.",
+      description: "AI-powered tree species recommendation system for urban planning",
       category: "AI",
       image: "treeplantation.jpg",
       inProgress: false,
@@ -87,32 +87,30 @@ const Projects = () => {
     {
       id: 7,
       title: "Portfolio",
-      description: "A personal portfolio site showcasing my projects, skills, and downloadable resume.",
+      description: "Interactive developer portfolio with 3D elements",
       category: "WEBSITES",
-      image: "treeplantation.jpg",
+      image: "portfolio.jpg",
       inProgress: true,
       links: {
-        github: "https://github.com/yourusername/tree-plantation",
+        github: "https://github.com/yourusername/portfolio",
         website: "",
         youtube: ""
       }
     }
   ];
-  
 
+  const filters = ['ALL', 'IN PROGRESS', 'WEBSITES', 'IOT', 'APPS', 'AI'];
 
-const filters = ['ALL', 'IN PROGRESS', 'WEBSITES', 'AI', 'APPS', 'IOT'];
+  const filteredProjects = activeFilter === 'ALL' 
+    ? projects 
+    : activeFilter === 'IN PROGRESS'
+      ? projects.filter(project => project.inProgress)
+      : projects.filter(project => project.category.includes(activeFilter));
 
-
-const filteredProjects = activeFilter === 'ALL' 
-  ? projects 
-  : activeFilter === 'IN PROGRESS'
-    ? projects.filter(project => project.inProgress)
-    : projects.filter(project => project.category.includes(activeFilter));
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">THINGS I’VE BUILD</h2>
+        <h2 className="section-title">THINGS I'VE BUILD</h2>
         <p className="section-subtitle">A glimpse of my technical journey—each project tells a story.</p>
         
         <div className="filters">
@@ -130,11 +128,11 @@ const filteredProjects = activeFilter === 'ALL'
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <div key={project.id} className="project-card">
-            {project.inProgress && (
-              <div className="progress-badge">In Progress</div>
-            )}
-            <div className="project-image">
-            <img src={`/images/${project.image}`} alt={project.title} />
+              {project.inProgress && (
+                <div className="progress-badge">In Progress</div>
+              )}
+              <div className="project-image">
+                <img src={`/images/${project.image}`} alt={project.title} />
                 <div className="project-links">
                   {project.links.github && (
                     <a href={project.links.github} target="_blank" rel="noopener noreferrer">
@@ -152,14 +150,13 @@ const filteredProjects = activeFilter === 'ALL'
                     </a>
                   )}
                 </div>
+              </div>
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+                <p className="project-category">{project.category}</p>
+              </div>
             </div>
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <p className="project-description">{project.description}</p> {/* Add this line */}
-              <p className="project-category">{project.category}</p>
-            </div>
-            
-          </div>
           ))}
         </div>
       </div>
