@@ -15,6 +15,7 @@
   .resume-description {
     max-width: 600px;
     margin: 0 auto 3rem;
+    font-family: 'Playfair Display', serif;
     line-height: 1.6;
     opacity: 0.9;
     font-size: 1.5rem;
