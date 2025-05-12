@@ -9,8 +9,8 @@
     position: relative;
     
     /* Add these background properties */
-    background-image: url('/src/assets/hero.jpg');
-    /* background-color: var(--batman-black); */
+    /* background-image: url('/src/assets/hero.jpg'); */
+    background-color: var(--batman-black);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
