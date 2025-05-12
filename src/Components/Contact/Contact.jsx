@@ -26,7 +26,7 @@ const Contact = () => {
               <a href="https://github.com/Akilan13kr" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="contact-social-icon" />
               </a>
-              <a href="www.linkedin.com/in/akilan-k-r" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/akilan-k-r/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="contact-social-icon" />
               </a>
               {/* Add more social links as needed */}
