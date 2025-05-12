@@ -56,6 +56,47 @@
     margin: 0 auto;
   }
   
+  /* Add these new styles to your existing Hero.css */
+.hire-me-btn {
+  padding: 0.8rem 2rem;
+  background-color: var(--batman-yellow);
+  color: var(--batman-black);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hire-me-btn:hover {
+  background-color: var(--batman-white);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(249, 252, 90, 0.4);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  color: var(--batman-white);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--batman-yellow);
+  transform: scale(1.2);
+}
+
+
   @media (max-width: 768px) {
     .hero-title {
       font-size: 2.5rem;

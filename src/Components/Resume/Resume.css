@@ -20,14 +20,14 @@
     font-size: 1.5rem;
   }
   
-  .download-buttons {
+  .resume-download-buttons {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
   }
   
-  .download-btn {
+  .resume-download-btn {
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
@@ -42,26 +42,27 @@
     letter-spacing: 1px;
   }
   
-  .download-btn:hover {
+  .resume-download-btn:hover {
     background-color: transparent;
-    color: var(--batman-yellow);
+    text-decoration: none;
+    color: var(--batman-white);
     transform: translateY(-3px);
     text-decoration: none;
     box-shadow: 0 5px 15px var(--batman-yellow);
   }
   
-  .pdf-icon {
+  .resume-pdf-icon {
     margin-right: 10px;
     font-size: 1.5rem;
   }
   
   @media (max-width: 600px) {
-    .download-buttons {
+    .resume-download-buttons {
       flex-direction: column;
       gap: 1rem;
     }
     
-    .download-btn {
+    .resume-download-btn {
       width: 100%;
       justify-content: center;
     }

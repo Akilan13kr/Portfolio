@@ -11,14 +11,14 @@ const Resume = () => {
         Download my resume/Cv to explore my skills, education, and project experience.
         </p>
         
-        <div className="download-buttons">
-          <a href="https://drive.google.com/file/d/1UgoRTNYfytKFHx3ErOyg52jHbkkHSsQZ/view?usp=sharing" className="download-btn" download>
-            <FaFilePdf className="pdf-icon" />
+        <div className="resume-download-buttons">
+          <a href="https://drive.google.com/file/d/1UgoRTNYfytKFHx3ErOyg52jHbkkHSsQZ/view?usp=sharing" className="resume-download-btn" download>
+            <FaFilePdf className="resume-pdf-icon" />
             Download Resume
           </a>
           
-          <a href="https://drive.google.com/file/d/1UgoRTNYfytKFHx3ErOyg52jHbkkHSsQZ/view?usp=sharing" className="download-btn" download>
-            <FaFilePdf className="pdf-icon" />
+          <a href="https://drive.google.com/file/d/1UgoRTNYfytKFHx3ErOyg52jHbkkHSsQZ/view?usp=sharing" className="resume-download-btn" download>
+            <FaFilePdf className="resume-pdf-icon" />
             Download CV
           </a>
         </div>

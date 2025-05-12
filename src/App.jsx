@@ -5,7 +5,8 @@ import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Resume from './Components/Resume/Resume';
 import Projects from './Components/Projects/Projects'
-
+import Certificates from './Components/Certificates/Certificates'
+import Contact from './Components/Contact/Contact'
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <Skills />
       <Resume />
       <Projects />
+      <Certificates />
+      <Contact />
       
       
       
