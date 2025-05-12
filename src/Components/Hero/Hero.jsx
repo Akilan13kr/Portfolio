@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero = () => {
   const handleHireMeClick = () => {
-    window.location.href = "mailto:akilan@example.com?subject=Hire%20Akilan%20K.R&body=Hello%20Akilan,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20opportunity...";
+    window.location.href = "mailto:akilan13kr@gmail.com?subject=Hire%20Akilan%20K.R&body=Hello%20Akilan,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20opportunity...";
   };
 
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/akilan-k-r/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="mailto:akilan@example.com">
+          <a href="mailto:akilan13kr@gmail.com">
             <FaEnvelope className="social-icon" />
           </a>
         </div>
