@@ -28,8 +28,8 @@ const About = () => {
 
   return (
     <section id="about" className="about-section">
-      <h2 className="section-title">ABOUT</h2>
-      <p className="section-subtitle">Discover who I am, what I do, and what drives me as a developer.</p>
+      <h2 className="about-section-title">ABOUT</h2>
+      <p className="about-section-subtitle">Discover who I am, what I do, and what drives me as a developer.</p>
       
       <div className="about-grid">
         {aboutItems.map((item, index) => (

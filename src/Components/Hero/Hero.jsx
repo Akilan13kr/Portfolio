@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className="hero-title">I AM AKILAN K.R</h1>
         <h2 className="hero-subtitle">SOFTWARE DEVELOPER</h2>
         <p className="hero-description">
-          STAND ON A SWEET SPOT WHERE DESIGN & CODE INTERSECTS.
+        Crafting seamless digital experiences with clean code and thoughtful design
         </p>
         
         <button className="hire-me-btn" onClick={handleHireMeClick}>

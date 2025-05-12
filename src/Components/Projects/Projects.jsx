@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { FaGithub, FaGlobe, FaYoutube } from 'react-icons/fa';
+import heritageimage from '../../assets/Projectsimg/heritageimage.jpg';
+import gasleaksystemimage from '../../assets/Projectsimg/gasleaks.jpg';
+import damopenimage from '../../assets/Projectsimg/damopenimage.jpg';
+import attendanceimage from '../../assets/Projectsimg/attendanceimage.png';
+import weatherimage from '../../assets/Projectsimg/weatherimage.jpg';
+import chatbotimage from '../../assets/Projectsimg/chatbotimage.jpg';
+import portfolio from '../../assets/Projectsimg/portfolio.jpg';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('ALL');
@@ -8,10 +15,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Endangered Heritage Platform",
-      description: "A platform to document and preserve cultural heritage sites using 3D scanning technology",
+      title: "DIGITAL PLATFORM FOR PRESERVING HERITAGE",
+      description: "A platform to document and preserve cultural heritage sites and know about all heritages and cultures",
       category: "WEBSITES",
-      image: "heritage.jpg",
+      image: heritageimage,
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/heritage-platform",
@@ -21,10 +28,10 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Gas Leak Detection IoT System",
+      title: "GAS LEAK DETECTION IOT SYSTEM",
       description: "Real-time gas leak detection with SMS alerts and cloud monitoring",
       category: "IOT",
-      image: "gasleak.jpg",
+      image: gasleaksystemimage,
       inProgress: true,
       links: {
         github: "https://github.com/yourusername/gas-leak-detector",
@@ -34,10 +41,10 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Disaster Management Dam Controller",
+      title: "DISASTER MANAGEMENT DAM CONTROLLER",
       description: "Automated water level control system for flood prevention",
       category: "IOT",
-      image: "damcontroller.jpg",
+      image: damopenimage,
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/dam-disaster-management",
@@ -47,10 +54,10 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Android Attendance System",
+      title: "ANDROID ATTENDENCE SYSTEM",
       description: "Facial recognition attendance system with geofencing",
       category: "APPS",
-      image: "attendance.jpg",
+      image: attendanceimage,
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/attendance-app",
@@ -60,10 +67,10 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "AI Chatbot for Heritage Support",
-      description: "NLP chatbot providing information about cultural heritage sites",
+      title: "WEATHER PREDICTION SYSTEM",
+      description: "A machine learning-based system that predicts weather patterns using image trained model.",
       category: "AI",
-      image: "chatbot.jpg",
+      image: weatherimage,
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/ai-heritage-chatbot",
@@ -73,10 +80,10 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Recommendation Chatbot",
+      title: "RECOMMENDATION CHATBOT",
       description: "AI-powered tree species recommendation system for urban planning",
       category: "AI",
-      image: "treeplantation.jpg",
+      image: chatbotimage,
       inProgress: false,
       links: {
         github: "https://github.com/yourusername/tree-plantation",
@@ -86,10 +93,10 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "Portfolio",
+      title: "PORTFOLIO",
       description: "Interactive developer portfolio with 3D elements",
       category: "WEBSITES",
-      image: "portfolio.jpg",
+      image: portfolio,
       inProgress: true,
       links: {
         github: "https://github.com/yourusername/portfolio",
@@ -109,9 +116,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects-section">
-      <div className="container">
-        <h2 className="section-title">THINGS I'VE BUILD</h2>
-        <p className="section-subtitle">A glimpse of my technical journey—each project tells a story.</p>
+      <div className="project-container">
+        <h2 className="project-section-title">THINGS I'VE BUILD</h2>
+        <p className="project-section-subtitle">A glimpse of my technical journey—each project tells a story.</p>
         
         <div className="filters">
           {filters.map(filter => (
@@ -132,7 +139,7 @@ const Projects = () => {
                 <div className="progress-badge">In Progress</div>
               )}
               <div className="project-image">
-                <img src={`/images/${project.image}`} alt={project.title} />
+                <img src={project.image} alt={project.title} />
                 <div className="project-links">
                   {project.links.github && (
                     <a href={project.links.github} target="_blank" rel="noopener noreferrer">

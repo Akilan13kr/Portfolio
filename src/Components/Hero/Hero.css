@@ -10,6 +10,7 @@
     
     /* Add these background properties */
     background-image: url('/src/assets/hero.jpg');
+    /* background-color: var(--batman-black); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,10 +51,11 @@
   }
   
   .hero-description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--batman-white);
+    margin-bottom: 3rem;
+    font-style: italic;
+    opacity: 0.8;
   }
   
   /* Add these new styles to your existing Hero.css */
@@ -63,7 +65,7 @@
   color: var(--batman-black);
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 2rem;
   cursor: pointer;

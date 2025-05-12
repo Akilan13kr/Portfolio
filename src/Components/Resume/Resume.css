@@ -13,11 +13,11 @@
   }
   
   .resume-description {
-    max-width: 600px;
-    margin: 0 auto 3rem;
-    line-height: 1.6;
-    opacity: 0.9;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    color: var(--batman-white);
+    margin-bottom: 3rem;
+    font-style: italic;
+    opacity: 0.8;
   }
   
   .resume-download-buttons {
