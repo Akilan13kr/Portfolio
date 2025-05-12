@@ -16,7 +16,7 @@ const About = () => {
     },
     {
       title: "My Interests",
-      content: "I'm passionate about AI, cultural preservation, sustainability, and tech for good.",
+      content: "Enthusiastic about AI, creative tech, and solving real-world challenges.",
       icon: <FaHeart />
     },
     {
