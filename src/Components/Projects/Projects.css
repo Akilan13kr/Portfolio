@@ -70,6 +70,7 @@
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(249, 252, 90, 0.2);
   border-color: var(--batman-yellow);
+  
 }
 
 .progress-badge {

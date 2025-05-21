@@ -1,0 +1,70 @@
+.project-detail-page {
+  padding: 4rem 2rem;
+  background: var(--batman-black);
+  color: var(--batman-white);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  color: var(--batman-yellow);
+  font-size: 3rem;
+}
+
+.project-sub {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.project-content h2 {
+  color: var(--batman-yellow);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-content p,
+.project-content ul,
+.project-content ol {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.project-content ul,
+.project-content ol {
+  padding-left: 1.5rem;
+}
+
+.project-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-links a {
+  color: var(--batman-yellow);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  color: var(--batman-white);
+}
