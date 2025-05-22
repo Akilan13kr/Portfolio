@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 import About from './Components/About/About';
@@ -17,7 +18,7 @@ function App() {
       <div className="App">
         <Routes>
           {/* Full project detail page */}
-          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/Projects/:id" element={<ProjectDetail />} />
 
           {/* Main one-page app */}
           <Route

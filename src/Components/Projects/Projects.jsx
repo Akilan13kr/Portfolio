@@ -144,7 +144,7 @@ const Projects = () => {
             <div
               key={project.id}
               className="project-card"
-              onClick={() => navigate(`/projects/${project.id}`)}
+              onClick={() => navigate(`/Projects/${project.id}`)}
               // style={{ cursor: 'zoom-in' }}
             >
               {project.inProgress && (
@@ -175,7 +175,7 @@ const Projects = () => {
               <div className="project-info"
                style={{ cursor: 'zoom-in' }}>
                 <h3>{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">{project.description.short}</p>
                 <p className="project-category">{project.category}</p>
               </div>
             </div>

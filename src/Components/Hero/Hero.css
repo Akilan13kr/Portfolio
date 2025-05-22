@@ -112,3 +112,39 @@
       font-size: 1rem;
     }
   }
+  /* Add these styles to your existing Hero.css */
+.hero-subtitle {
+  min-height: 3rem; /* Prevent layout shift during transitions */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter {
+  display: inline-block;
+  transition: all 0.1s ease;
+  position: relative;
+}
+
+.letter.changing {
+  animation: swipeUp 0.3s forwards;
+  color: var(--batman-yellow);
+}
+
+@keyframes swipeUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
