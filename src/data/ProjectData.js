@@ -144,7 +144,7 @@ const projectData = [
       "Solar-powered version"
     ],
     links: {
-      github: "https://github.com/yourusername/dam-disaster-management",
+      github: "https://github.com/Akilan13kr/Automatic-Dam-Opener.git",
       website: "",
       youtube: ""
     },
