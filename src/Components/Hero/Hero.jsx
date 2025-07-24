@@ -124,7 +124,7 @@ const Hero = () => {
           ))}
         </h2>
         <p className="hero-description">
-          Crafting seamless digital experiences with clean code and thoughtful design
+          Blending code, creativity, and purpose into every project.
         </p>
         
         <button className="hire-me-btn" onClick={handleHireMeClick}>
