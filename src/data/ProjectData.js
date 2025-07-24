@@ -53,7 +53,7 @@ const projectData = [
       youtube: "https://yourheritageplatform.com"
     },
     role: "Solo Developer – built entire app including AI, backend, and UI",
-    inProgress: false
+    inProgress: true
   },
   {
     id: 2,
@@ -96,7 +96,7 @@ const projectData = [
       "Integration with home automation systems"
     ],
     links: {
-      github: "https://github.com/yourusername/gas-leak-detector",
+      github: "",
       website: "",
       youtube: ""
     },
@@ -239,7 +239,7 @@ const projectData = [
       "Add temperature prediction"
     ],
     links: {
-      github: "https://github.com/yourusername/ai-heritage-chatbot",
+      github: "https://github.com/Akilan13kr/Weather-Prediction.git",
       website: "",
       youtube: ""
     },
@@ -334,7 +334,7 @@ const projectData = [
       "Make theme switchable (light/dark)"
     ],
     links: {
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/Akilan13kr/Portfolio.git",
       website: "",
       youtube: ""
     },
