@@ -191,7 +191,7 @@ const projectData = [
       "Generate downloadable reports"
     ],
     links: {
-      github: "https://github.com/yourusername/attendance-app",
+      github: "",
       website: "",
       youtube: ""
     },
@@ -247,52 +247,54 @@ const projectData = [
     inProgress: false
   },
   {
-    id: 6,
-    title: "Recommendation Chatbot",
-    category: "AI",
-    image: chatbotimage,
-    description: {
-      short: "A chatbot that recommends tree species based on user inputs and location.",
-      long: "An AI chatbot designed to promote sustainability by recommending suitable trees for planting in a given area, considering soil, water, and sunlight needs."
+    "id": 6,
+    "title": "Company Recommendation Chatbot",
+    "category": "AI",
+    "image": chatbotimage,
+    "description": {
+      "short": "An AI chatbot that recommends companies to job seekers based on domain and skills.",
+      "long": "A smart recommendation system that helps job seekers discover relevant companies by analyzing their skills and preferred domains. The chatbot provides detailed company information including services, specializations, and contact details."
     },
-    features: [
-      "Conversational AI interface",
-      "Plant/tree recommendation engine",
-      "Custom-trained intent handling",
-      "Text-based input"
+    "features": [
+      "Natural language understanding",
+      "Company recommendation engine",
+      "Custom-trained neural network model",
+      "Dynamic response generation",
+      "Web-based interface"
     ],
-    techStack: {
-      frontend: [],
-      backend: ["Python"],
-      ai_Tools: ["Rasa", "NLTK"],
-      database: [],
-      tools: ["VS Code", "Python"]
+    "techStack": {
+      "frontend": ["HTML/CSS", "JavaScript"],
+      "backend": ["Python", "Flask"],
+      "ai_Tools": ["NLTK", "Keras", "TensorFlow"],
+      "database": ["JSON"],
+      "tools": ["VS Code", "Google Colab"]
     },
-    screenshots: ["chatbotimage.jpg"],
-    howItWorks: [
-      "User types preferences (area, shade, etc.)",
-      "Bot parses input to detect intent.",
-      "Tree suggestions are returned based on logic.",
-      "User can ask for more info or suggestions."
+    "screenshots": ["chatbotimage.jpg"],
+    "howItWorks": [
+      "User asks about companies in a specific domain (e.g., 'Find AI companies')",
+      "Chatbot processes the query using NLP techniques",
+      "System matches query with company data from JSON database",
+      "Returns detailed company information including services and specializations"
     ],
-    impact: "Supports green initiatives by encouraging the right type of planting through tech.",
-    challenges: [
-      "Training good NLP intents",
-      "Creating a knowledge base",
-      "Bot response flow management"
+    "impact": "Helps job seekers efficiently discover companies matching their skills and interests, reducing job search time.",
+    "challenges": [
+      "Training accurate intent classification",
+      "Handling varied user query patterns",
+      "Maintaining up-to-date company information"
     ],
-    futurePlans: [
-      "Voice input/output support",
-      "Add real planting success data",
-      "Deploy on website"
+    "futurePlans": [
+      "Integrate with job listing APIs",
+      "Add user profile system for personalized recommendations",
+      "Implement feedback mechanism to improve recommendations",
+      "Deploy as mobile/web application"
     ],
-    links: {
-      github: "https://github.com/yourusername/tree-plantation",
-      website: "",
-      youtube: ""
+    "links": {
+      "github": "https://github.com/Akilan13kr/Recommendation-Chatbot.git",
+      "website": "",
+      "youtube": ""
     },
-    role: "Bot Developer – built NLU model and response logic",
-    inProgress: false
+    "role": "Full-stack Developer - Built NLP model, backend API, and frontend interface",
+    "inProgress": false
   },
   {
     id: 7,
