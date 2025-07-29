@@ -5,57 +5,74 @@ import attendanceimage from '../assets/Projectsimg/attendanceimage.png';
 import weatherimage from '../assets/Projectsimg/weatherimage.jpg';
 import chatbotimage from '../assets/Projectsimg/chatbotimage.jpg';
 import portfolio from '../assets/Projectsimg/portfolio.jpg';
+import foodpowderimage from '../assets/Projectsimg/foodpowderimage.png';
 
 const projectData = [
   {
-    id: 1,
-    title: "Digital Platform for Preserving Heritage",
-    category: "WEBSITES",
-    image: heritageimage,
-    description: {
-      short: "A platform to document and preserve cultural heritage through community contributions and AI.",
-      long: "This web-based platform allows users to contribute, explore, and preserve endangered cultural heritage by uploading multimedia and written content. An AI model helps classify submissions, and an admin panel verifies authenticity to ensure content quality."
-    },
-    features: [
-      "User login and content submission",
-      "AI-based image classification",
-      "Admin content verification panel",
-      "Responsive design with modern UI"
-    ],
-    techStack: {
-      frontend: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      backend: ["Flask", "Firebase"],
-      ai_Tools: ["TensorFlow", "OpenCV"],
-      database: ["Firebase Firestore"],
-      tools: ["Git", "Postman", "VS Code"]
-    },
-    screenshots: ["heritage_home.jpg", "heritage_dashboard.jpg"],
-    howItWorks: [
-      "Users register and upload multimedia files.",
-      "AI scans and classifies cultural data.",
-      "Admins verify submissions for authenticity.",
-      "Approved data gets added to the heritage archive."
-    ],
-    impact: "Helps preserve endangered traditions by collecting and verifying community-contributed cultural data.",
-    challenges: [
-      "Managing multimedia uploads efficiently",
-      "Designing an AI model for cultural content",
-      "Creating a secure and simple admin system"
-    ],
-    futurePlans: [
-      "Multilingual content support",
-      "Mobile app integration",
-      "Public-facing AI heritage assistant"
-    ],
-    links: {
-      github: "https://github.com/yourusername/heritage-platform",
-      website: "https://yourheritageplatform.com",
-      youtube: "https://yourheritageplatform.com"
-    },
-    role: "Solo Developer – built entire app including AI, backend, and UI",
-    inProgress: true
+  id: 1,
+  title: "FoodPowder Web Application",
+  category: "WEBSITES",
+  image: foodpowderimage, 
+  description: {
+    short: "A full-stack platform to showcase, manage, and purchase traditional food powders.",
+    long: "FoodPowder WebApp is an e-commerce-like platform where users can browse, order, and pay for traditional food powders, while an admin dashboard allows the seller to manage categories, products, and orders. The backend is powered by Java Spring Boot with Firebase & Razorpay integration. The client-side is a responsive React app deployed to Netlify."
   },
-  {
+  features: [
+    "User login with JWT authentication",
+    "Add to cart and order food powders",
+    "Admin panel for managing products and categories",
+    "Razorpay payment integration (test mode)",
+    "Firebase media storage for product images",
+    "Contact form to reach admins",
+    "Separate frontend for user and admin",
+    "Modern responsive UI"
+  ],
+  techStack: {
+    frontend: ["React", "Vite", "Bootstrap CSS"],
+    backend: ["Java 21", "Spring Boot", "JWT", "Docker"],
+    database: ["Firebase Firestore"],
+    ai_Tools: [],
+    tools: ["Render", "Netlify", "Git", "Postman", "VS Code"]
+  },
+  screenshots: ["foodpowder_home.jpg", "admin_dashboard.jpg"],
+
+  howItWorks: [
+    "Users browse and add food powders to their cart.",
+    "Razorpay test payment is used to simulate UPI, cards, etc.",
+    "Firebase stores all media and images securely.",
+    "Admins log in to a secure panel to manage content.",
+    "Backend APIs are protected and deployed via Docker on Render."
+  ],
+
+  impact: "Empowers small-scale food powder sellers to bring their products online with a managed system that includes ordering, payments, and product handling – all with zero cost backend deployment.",
+  
+  challenges: [
+    "Handling token-based auth with protected cart routes",
+    "Configuring Firebase in a secure way for Render deploy",
+    "Setting up Razorpay test payment flow for dev",
+    "Optimizing image loading and responsive display"
+  ],
+
+  futurePlans: [
+    "Product review and rating system",
+    "Order tracking via SMS/Email",
+    "Role-based multi-admin support",
+    "Comment section for each product",
+    "Progressive Web App (PWA) or Android app",
+    "Self-host backend using old laptop server setup"
+  ],
+
+  links: {
+    github: "https://github.com/Akilan13kr/FoodApp",
+    website: "https://k-r-akilan-foodappclient.netlify.app/",
+    youtube: "https://youtu.be/your-video-link"
+  },
+
+  role: "Full-stack developer – designed and implemented frontend (user/admin), backend APIs, Razorpay integration, Firebase handling, and Docker deployment",
+
+  inProgress: false
+},
+ {
     id: 2,
     title: "Gas Leak Detection IoT System",
     category: "IOT",
@@ -342,7 +359,55 @@ const projectData = [
     },
     role: "Frontend Developer – designed and coded all sections",
     inProgress: true
-  }
+  },
+    {
+    id: 8,
+    title: "Digital Platform for Preserving Heritage",
+    category: "WEBSITES",
+    image: heritageimage,
+    description: {
+      short: "A platform to document and preserve cultural heritage through community contributions and AI.",
+      long: "This web-based platform allows users to contribute, explore, and preserve endangered cultural heritage by uploading multimedia and written content. An AI model helps classify submissions, and an admin panel verifies authenticity to ensure content quality."
+    },
+    features: [
+      "User login and content submission",
+      "AI-based image classification",
+      "Admin content verification panel",
+      "Responsive design with modern UI"
+    ],
+    techStack: {
+      frontend: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      backend: ["Flask", "Firebase"],
+      ai_Tools: ["TensorFlow", "OpenCV"],
+      database: ["Firebase Firestore"],
+      tools: ["Git", "Postman", "VS Code"]
+    },
+    screenshots: ["heritage_home.jpg", "heritage_dashboard.jpg"],
+    howItWorks: [
+      "Users register and upload multimedia files.",
+      "AI scans and classifies cultural data.",
+      "Admins verify submissions for authenticity.",
+      "Approved data gets added to the heritage archive."
+    ],
+    impact: "Helps preserve endangered traditions by collecting and verifying community-contributed cultural data.",
+    challenges: [
+      "Managing multimedia uploads efficiently",
+      "Designing an AI model for cultural content",
+      "Creating a secure and simple admin system"
+    ],
+    futurePlans: [
+      "Multilingual content support",
+      "Mobile app integration",
+      "Public-facing AI heritage assistant"
+    ],
+    links: {
+      github: "https://github.com/yourusername/heritage-platform",
+      website: "https://yourheritageplatform.com",
+      youtube: "https://yourheritageplatform.com"
+    },
+    role: "Solo Developer – built entire app including AI, backend, and UI",
+    inProgress: true
+  },
 ];
 
 export default projectData;
