@@ -17,7 +17,7 @@ const Resume = () => {
             Download Resume
           </a>
           
-          <a href="https://drive.google.com/file/d/1UgoRTNYfytKFHx3ErOyg52jHbkkHSsQZ/view?usp=sharing" className="resume-download-btn" download>
+          <a href="https://drive.google.com/file/d/1Xv8syK755gx-EfEoERnQiqeWRqbZQ1Ke/view?usp=sharing" className="resume-download-btn" download>
             <FaFilePdf className="resume-pdf-icon" />
             Download CV
           </a>
