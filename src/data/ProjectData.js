@@ -257,7 +257,7 @@ const projectData = [
     ],
     links: {
       github: "https://github.com/Akilan13kr/Weather-Prediction.git",
-      website: "",
+      website: "https://huggingface.co/spaces/Akilankr/Weather-Prediction",
       youtube: ""
     },
     role: "AI Developer – trained and tested the model end to end",
