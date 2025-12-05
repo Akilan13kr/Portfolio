@@ -112,7 +112,7 @@ const ProjectDetail = () => {
         {project.role && (
           <section className="project-detail-section">
             <h2>MY ROLE</h2>
-            <p>{project.role}</p>
+            <p className='project-detail-description'>{project.role}</p>
           </section>
         )}
 
