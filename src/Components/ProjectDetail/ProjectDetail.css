@@ -24,7 +24,7 @@
 
 .project-detail-header h1 {
   color: var(--batman-yellow);
-  font-size: 2.5rem;
+  font-size: 3 rem;
   margin: 0.5rem 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -38,7 +38,7 @@
 }
 
 .project-detail-category, .project-detail-status {
-  font-size: 1.3rem;
+  font-size: 1.5 rem;
   font-weight: 600;
   padding: 0.3rem 1rem;
   border-radius: 20px;
@@ -86,7 +86,7 @@
 
 .project-detail-content h2 {
   color: var(--batman-yellow);
-  font-size: 1.8rem;
+  font-size: 2.5 rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--batman-dark-gray);
@@ -96,12 +96,12 @@
 
 .project-detail-content h3 {
   color: var(--batman-light-gray);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 1rem 0 0.5rem;
 }
 
 .project-detail-description {
-  font-size: 1.7rem;
+  font-size: 1.5em ;
   line-height: 1.8;
   opacity: 0.9;
   margin-bottom: 2rem;
@@ -121,6 +121,7 @@
 .challenges-list li, .future-plans-list li {
   margin-bottom: 0.8rem;
   position: relative;
+  font-size: 1.2em;
   padding-left: 1.5rem;
 }
 
@@ -135,6 +136,7 @@
   margin-bottom: 1rem;
   list-style: none;
   display: flex;
+  font-size: 1.2em;
   align-items: flex-start;
 }
 
@@ -166,7 +168,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .tech-stack-item {
@@ -243,6 +245,7 @@
   position: relative;
   padding-left: 1.5rem;
   break-inside: avoid;
+  font-size: 1.2em;
 }
 
 .feature-list li::before {
@@ -250,7 +253,7 @@
   color: var(--batman-yellow);
   position: absolute;
   left: 0;
-  font-size: 1.5rem;
+  font-size: 1.2em;
   line-height: 1;
 }
 
