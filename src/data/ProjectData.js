@@ -22,7 +22,7 @@ const projectData = [
     "Add to cart and order food powders",
     "Admin panel for managing products and categories",
     "Razorpay payment integration (test mode)",
-    "Firebase media storage for product images",
+    "Firebase media storage for product images & categories images",
     "Contact form to reach admins",
     "Separate frontend for user and admin",
     "Modern responsive UI"
@@ -40,7 +40,7 @@ const projectData = [
     "Users browse and add food powders to their cart.",
     "Razorpay test payment is used to simulate UPI, cards, etc.",
     "Firebase stores all media and images securely.",
-    "Admins log in to a secure panel to manage content.",
+    "Admins log in to a secure panel to manage content and update the orderstatus.",
     "Backend APIs are protected and deployed via Docker on Render."
   ],
 
@@ -55,11 +55,11 @@ const projectData = [
 
   futurePlans: [
     "Product review and rating system",
+    "Email verification",
     "Order tracking via SMS/Email",
     "Role-based multi-admin support",
     "Comment section for each product",
-    "Progressive Web App (PWA) or Android app",
-    "Self-host backend using old laptop server setup"
+    "Progressive Web App (PWA) or Android app"
   ],
 
   links: {
@@ -79,7 +79,7 @@ const projectData = [
     image: gasleaksystemimage,
     description: {
       short: "An IoT-based safety system for detecting gas leaks and triggering automated responses.",
-      long: "This system uses gas sensors and a SIM800L module to detect hazardous gas leaks in real-time, automatically triggering an exhaust fan and sending SMS alerts. Designed using Arduino and Flask."
+      long: "This system uses gas sensors and a SIM800L module to detect hazardous gas leaks in real-time, automatically triggering an exhaust fan and sending SMS alerts. Designed using Arduino."
     },
     features: [
       "Real-time gas level monitoring",
@@ -89,15 +89,15 @@ const projectData = [
     ],
     techStack: {
       frontend: [],
-      backend: ["Flask"],
+      backend: [],
       ai_Tools: [],
       database: [],
-      tools: ["Arduino", "SIM800L", "HC-SR04", "Servo Motor"]
+      tools: ["Arduino", "SIM800L(SIM module)", "MQ-6(Gas Sensor module)", "Servo Motor"]
     },
     screenshots: ["gasleak.jpg"],
     howItWorks: [
       "Sensor detects gas leakage.",
-      "Flask receives and logs the signal.",
+      "Arduino receives and logs the signal.",
       "Fan turns on and SMS is sent to user.",
       "System resets when gas level drops."
     ],
@@ -117,7 +117,7 @@ const projectData = [
       website: "",
       youtube: ""
     },
-    role: "Hardware and software integration – built circuit and Flask backend",
+    role: "Hardware and software integration – built circuit",
     inProgress: true
   },
   {
@@ -140,11 +140,11 @@ const projectData = [
       backend: [],
       ai_Tools: [],
       database: [],
-      tools: ["Arduino", "HC-SR04", "Servo Motor", "SIM800L"]
+      tools: ["Arduino", "HC-SR04(ultrasonic sensor module)", "Servo Motor", "SIM800L(SIM module"]
     },
     screenshots: ["damopenimage.jpg"],
     howItWorks: [
-      "Ultrasonic sensor checks water level every 5 sec.",
+      "Ultrasonic sensor checks water level every 2 sec.",
       "If level is above threshold, gate opens partially/fully.",
       "SMS is sent depending on risk level.",
       "Gate closes once level returns to normal."
@@ -158,7 +158,8 @@ const projectData = [
     futurePlans: [
       "Mobile app for real-time alerts",
       "Data logging and trend analysis",
-      "Solar-powered version"
+      "Solar-powered version",
+      "Cloud based monitor for a set a dams"
     ],
     links: {
       github: "https://github.com/Akilan13kr/Automatic-Dam-Opener.git",
@@ -175,25 +176,26 @@ const projectData = [
     image: attendanceimage,
     description: {
       short: "A mobile app to track attendance with real-time Firebase backend.",
-      long: "An Android app that lets students mark their attendance using QR or button. Admins can track and manage attendance data synced via Firebase."
+      long: "An Android application where teachers can record student attendance on a period-wise basis Admins can track and manage both teacher and student attendance, with all data synchronized through Firebase. Both admins and teachers can retrieve attendance records for any student in a csv format"
     },
     features: [
-      "Student registration/login",
+      "Admin add Teacher(registration)",
+      "Only Registered Teacher can log and entry the attendance",
       "Mark attendance with real-time sync",
-      "Firebase database integration",
-      "Admin view with attendance summary"
+      "Firebase database integration"
     ],
     techStack: {
       frontend: ["Android XML"],
-      backend: ["Firebase"],
+      backend: ["Java"],
       ai_Tools: [],
       database: ["Firebase Realtime DB"],
       tools: ["Android Studio"]
     },
     screenshots: ["attendanceimage.png"],
     howItWorks: [
-      "Student logs in and clicks 'Mark Present'.",
-      "Data is stored in Firebase with timestamp.",
+      "Before Teacher entry the student attendance, Admin(like HOD, Principal) entry the teacher attendance",
+      "Present teachers can entry the student attendance on between specific time of a period,",
+      "Data is stored in Firebase for each period as Present/Absent/On Duty.",
       "Admin accesses full log of each student."
     ],
     impact: "Simplifies attendance for institutions with real-time centralized records.",
@@ -204,8 +206,9 @@ const projectData = [
     ],
     futurePlans: [
       "Add geofencing",
-      "Introduce face recognition",
-      "Generate downloadable reports"
+      "Introduce face recognition/QR code",
+      "Student login",
+      "Student report mark details"
     ],
     links: {
       github: "",
@@ -222,16 +225,16 @@ const projectData = [
     image: weatherimage,
     description: {
       short: "A machine learning system to predict weather conditions from historical image data.",
-      long: "This ML project uses a trained model to classify weather images and predict conditions like sunny, cloudy, or rainy, based on past data."
+      long: "This ML project uses a trained model to classify weather images and predict conditions like sunny, cloudy, or rainy, based on image data we give to the system."
     },
     features: [
       "Image classification for weather type",
       "Trained model using datasets",
       "Python-based prediction logic",
-      "Terminal or simple UI input"
+      "simple UI input"
     ],
     techStack: {
-      frontend: [],
+      frontend: ["HTML, CSS"],
       backend: ["Python"],
       ai_Tools: ["TensorFlow", "Keras"],
       database: [],
@@ -252,8 +255,8 @@ const projectData = [
     ],
     futurePlans: [
       "Integrate live webcam weather feed",
-      "Deploy to a web interface",
-      "Add temperature prediction"
+      "Cloud based live data",
+      "Add temperature, humid prediction"
     ],
     links: {
       github: "https://github.com/Akilan13kr/Weather-Prediction.git",
@@ -283,7 +286,7 @@ const projectData = [
       "frontend": ["HTML/CSS", "JavaScript"],
       "backend": ["Python", "Flask"],
       "ai_Tools": ["NLTK", "Keras", "TensorFlow"],
-      "database": ["JSON"],
+      "database": ["JSON based train data"],
       "tools": ["VS Code", "Google Colab"]
     },
     "screenshots": ["chatbotimage.jpg"],
@@ -319,8 +322,8 @@ const projectData = [
     category: "WEBSITES",
     image: portfolio,
     description: {
-      short: "An interactive personal portfolio built with React and Batman-style dark theme.",
-      long: "My personal portfolio to showcase projects, skills, and resume, featuring interactive design, routing, and a dark UI inspired by the Batman theme."
+      short: "An interactive personal portfolio built with React.",
+      long: "My personal portfolio to showcase projects, skills, and resume, featuring interactive design, and my contacts."
     },
     features: [
       "Animated sections and smooth scroll",
@@ -337,7 +340,7 @@ const projectData = [
     },
     screenshots: ["portfolio.jpg"],
     howItWorks: [
-      "User browses sections or filters projects.",
+      "User filters projects.",
       "Clicking a card opens a detailed route.",
       "Resume and contact are available in one scroll."
     ],
@@ -401,9 +404,9 @@ const projectData = [
       "Public-facing AI heritage assistant"
     ],
     links: {
-      github: "https://github.com/yourusername/heritage-platform",
-      website: "https://yourheritageplatform.com",
-      youtube: "https://yourheritageplatform.com"
+      github: "",
+      website: "",
+      youtube: ""
     },
     role: "Solo Developer – built entire app including AI, backend, and UI",
     inProgress: true
